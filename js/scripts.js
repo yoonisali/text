@@ -47,7 +47,7 @@ function boldHalf(word, text) {
   const p = document.createElement("p");
   let textArray = text.split("");
   textArray.forEach(function (element, index) {
-    if (word === element) {
+    if (word.includes(element)) {
       const bold = document.createElement("strong");
       bold.append(element);
       p.append(bold);
